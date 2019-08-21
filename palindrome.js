@@ -1,7 +1,7 @@
 export default function palindrome(str) {
 
   // remove special characters and spaces, convert to upper case
-  // using regex
+  // done using regex
   var ustr = str.replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toUpperCase();
 
   // split each character of the string and save into an array.
