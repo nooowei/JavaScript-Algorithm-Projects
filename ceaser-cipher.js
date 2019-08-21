@@ -27,7 +27,7 @@ function cCipher(str, num){
 }
 
 
-console.log(cCipher("asd", 13));      //'nfq'
-console.log(cCipher("abc", 7));       //'hij'
-console.log(cCipher("HELLkjhO", 10)); //'ROVVutrY'
+console.log(cCipher("asd123", 13));      //'nfq123'
+console.log(cCipher("abc#", 7));       //'hij#'
+console.log(cCipher("HELLk!@#jhO", 10)); //'ROVVu!@#trY'
 console.log(cCipher("123", 22));      //'123'
