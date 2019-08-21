@@ -1,5 +1,5 @@
 function cCipher(str, num){
-  // declare a new string
+  // declare a new string variable for later
   var newStr = "";
 
   // iterate through the string with for loop
@@ -21,13 +21,14 @@ function cCipher(str, num){
         x = String.fromCharCode(((uni - 65 + num)%26)+65);
       }
     }
+    // if the character is not a letter, it will just append as is
     newStr += x;
   }
   return newStr;
 }
 
 
-console.log(cCipher("asd123", 13));      //'nfq123'
-console.log(cCipher("abc#", 7));       //'hij#'
-console.log(cCipher("HELLk!@#jhO", 10)); //'ROVVu!@#trY'
-console.log(cCipher("123", 22));      //'123'
+console.log(cCipher("asd123", 13));         //'nfq123'
+console.log(cCipher("abc#", 7));            //'hij#'
+console.log(cCipher("HELLk!@#jhO", 10));   //'ROVVu!@#trY'
+console.log(cCipher("123", 22));           //'123'
